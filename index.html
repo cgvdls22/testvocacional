@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Inteligencias Múltiples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e0f7fa;
+            border: 1px solid #00acc1;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test de Inteligencias Múltiples</h1>
+    <p>Responde a las preguntas seleccionando un nivel del 1 al 5 (1 = Nunca, 5 = Siempre).</p>
+
+    <!-- Contenedor de preguntas -->
+    <form id="test-form">
+        <!-- Sección Inteligencia Lingüística -->
+        <div class="section">
+            <h2>Inteligencia Lingüística</h2>
+            <div class="question">
+                <label>1. Redacta mejor que el promedio</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>2. Cuenta bromas y chistes o inventa cuentos increíbles</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>3. Tiene buena memoria para los nombres, lugares, fechas y trivialidades</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>4. Disfruta de los juegos de palabras</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>5. Disfruta leer libros</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>6. Escribe las palabras correctamente</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>7. Aprecia las rimas absurdas, ocurrentes, trabalenguas, etc.</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>8. Le gusta escuchar la palabra hablada (historias, comentarios en la radio, etc)</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>9. Tiene buen vocabulario</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+            <div class="question">
+                <label>10. Se comunica con los demás de una manera marcadamente verbal</label>
+                <input type="number" min="1" max="5" value="1" class="linguistica">
+            </div>
+        </div>
+
+        <!-- Sección Inteligencia Lógica-Matemática -->
+        <div class="section">
+            <h2>Inteligencia Lógica-Matemática</h2>
+            <div class="question">
+                <label>1. Hace muchas preguntas sobre las ciencias</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>2. Hace operaciones aritméticas mentalmente con mucha rapidez</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>3. Le agradan las clases de matemáticas</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>4. Le interesan los juegos de matemáticas en computadoras</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>5. Le gustan los juegos y rompecabezas que requieren de lógica</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>6. Le gusta clasificar y jerarquizar cosas</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>7. Piensa en un nivel más abstracto y conceptual que sus compañeros</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+            <div class="question">
+                <label>8. Tiene buen sentido de causa y efecto</label>
+                <input type="number" min="1" max="5" value="1" class="logica">
+            </div>
+        </div>
+
+        <!-- Otras secciones: Espacial, Física, Musical, Interpersonal, Intrapersonal -->
+        <!-- Similar al formato anterior -->
+        <!-- Sección Inteligencia Espacial -->
+        <div class="section">
+            <h2>Inteligencia Espacial</h2>
+            <div class="question">
+                <label>1. Presenta imágenes visuales nítidas</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>2. Lee mapas, gráficos y diagramas con más facilidad que el texto</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>3. Fantasea más que sus compañeros</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>4. Dibuja figuras avanzadas</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>5. Le gusta ver películas, diapositivas y otras presentaciones visuales</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>6. Le gusta resolver rompecabezas, laberintos y otras actividades visuales similares</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>7. Crea construcciones tridimensionales avanzadas (juegos tipo Playgo o Lego)</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>8. Cuando lee, aprovecha más las imágenes que las palabras</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+            <div class="question">
+                <label>9. Hace grabados en sus libros de trabajo, plantillas de trabajo y otros materiales</label>
+                <input type="number" min="1" max="5" value="1" class="espacial">
+            </div>
+        </div>
+
+        <!-- Sección Inteligencia Física y Cinestésica -->
+        <div class="section">
+            <h2>Inteligencia Física y Cinestésica</h2>
+            <div class="question">
+                <label>1. Se destaca en uno o más deportes</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>2. Se mueve o está inquieto cuando está sentado mucho tiempo</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>3. Imita muy bien los gestos y movimientos característicos de otras personas</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>4. Le encanta desarmar cosas y volver a armarlas</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>5. Aprecia mirar, tocar y sentir las cosas</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>6. Le gusta correr y otras actividades físicas</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>7. Demuestra destreza en artesanía</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>8. Tiene una manera dramática de expresarse</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>9. Manifiesta sensaciones físicas diferentes mientras piensa o trabaja</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+            <div class="question">
+                <label>10. Disfruta trabajar con plastilina, cartulinas y otras experiencias táctiles</label>
+                <input type="number" min="1" max="5" value="1" class="fisica">
+            </div>
+        </div>
+
+        <!-- Sección Inteligencia Musical -->
+        <div class="section">
+            <h2>Inteligencia Musical</h2>
+            <div class="question">
+                <label>1. Se da cuenta cuando la música está desentonada o suena mal</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>2. Recuerda las melodías de las canciones</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>3. Tiene buena voz para cantar</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>4. Toca un instrumento musical o canta</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>5. Canturrea sin darse cuenta</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>6. Tamborilea rítmicamente sobre la mesa o escritorio mientras trabaja</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>7. Es sensible a los ruidos ambientales (ejemplo: la lluvia sobre el techo)</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+            <div class="question">
+                <label>8. Responde favorablemente cuando alguien pone música</label>
+                <input type="number" min="1" max="5" value="1" class="musical">
+            </div>
+        </div>
+
+        <!-- Sección Inteligencia Interpersonal -->
+        <div class="section">
+            <h2>Inteligencia Interpersonal</h2>
+            <div class="question">
+                <label>1. Disfruta conversar con sus compañeros</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>2. Tiene características de líder natural</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>3. Aconseja a los amigos que tienen problemas</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>4. Parece tener buen sentido común</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>5. Pertenece a clubes, comités y otras organizaciones</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>6. Disfruta enseñando a otros</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>7. Le gusta interactuar, recrearse con sus colegas</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>8. Tiene dos o más buenos amigos</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>9. Tiene buen sentido de empatía o interés por los demás</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+            <div class="question">
+                <label>10. Otros buscan su compañía</label>
+                <input type="number" min="1" max="5" value="1" class="interpersonal">
+            </div>
+        </div>
+        <!-- Sección Inteligencia Intrapersonal -->
+        <div class="section">
+            <h2>Inteligencia Intrapersonal</h2>
+            <div class="question">
+                <label>1. Demuestra sentido de independencia o voluntad fuerte</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>2. Tiene un concepto práctico de sus habilidades y debilidades</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>3. Presenta buen desempeño cuando está solo, jugando o estudiando</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>4. Lleva un compás completamente diferente en cuanto a su estilo de vida y aprendizaje</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>5. Tiene un interés o pasatiempo sobre el que no habla mucho con los demás</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>6. Tiene buen sentido de autodisciplina</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>7. Prefiere trabajar solo</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>8. Expresa acertadamente sus sentimientos</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>9. Es capaz de aprender de sus errores y logros en la vida</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+            <div class="question">
+                <label>10. Demuestra un gran amor propio</label>
+                <input type="number" min="1" max="5" value="1" class="intrapersonal">
+            </div>
+        </div>
+
+
+        <!-- Botón para calcular -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+        </div>
+    </form>
+
+    <!-- Resultado -->
+    <div id="resultado" class="result" style="display: none;"></div>
+
+    <script>
+        function calcularResultado() {
+            // Factores de multiplicación
+            const factores = {
+                linguistica: 2,
+                logica: 2.5,
+                espacial: 2.2222222222222222222222,
+                fisica: 2,
+                musical: 2.5,
+                interpersonal: 2,
+                intrapersonal: 2
+            };
+
+            // Obtención de puntajes
+            const categorias = ["linguistica", "logica", "espacial", "fisica", "musical", "interpersonal", "intrapersonal"];
+            let resultados = {};
+
+            categorias.forEach(cat => {
+                let inputs = document.querySelectorAll(`.${cat}`);
+                let total = 0;
+                inputs.forEach(input => total += parseInt(input.value));
+                resultados[cat] = total * factores[cat];
+            });
+
+            // Identificar la inteligencia predominante
+            let mayorInteligencia = Object.keys(resultados).reduce((a, b) => resultados[a] > resultados[b] ? a : b);
+
+            // Mostrar resultado
+            let resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.style.display = "block";
+            resultadoDiv.innerHTML = `<h2>Resultado</h2>
+                <p>Tu inteligencia predominante es: <strong>${mayorInteligencia}</strong></p>
+                <p><strong>Detalle de puntajes:</strong></p>`;
+            for (let key in resultados) {
+                resultadoDiv.innerHTML += `<p>${key}: ${resultados[key].toFixed(2)}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
